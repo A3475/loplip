@@ -41,8 +41,8 @@
                 <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                 <li class="active"><a href="<?php $this->options->siteUrl(); ?>">Home</a></li>
-                <li><a href="<?php $this->options->siteUrl(); ?>index.php/frinds.html">友链</a></li>
-                <li><a href="<?php $this->options->siteUrl(); ?>index.php/about.html">关于</a></li>
+                <!-- <li><a href="<?php $this->options->siteUrl(); ?>index.php/frinds.html">友链</a></li> //独立页面通用格式-->
+				<!-- <li><a href="<?php $this->options->siteUrl(); ?>index.php/archives/30/">友链</a></li> //文章通用格式-->
                 </ul>
                 </div>
                 </div>
