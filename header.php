@@ -51,5 +51,8 @@
         </div>
     </header><!-- end #header -->
     <div class="container">
-			<img class="img-thumbnail" src="http://z4a.net/images/2017/11/25/cropped-background.png"/>
+            <?php if ($this->options->picUrl): ?>
+				<img class="img-thumbnail" src="<?php $this->options->picUrl() ?>"/>
+			<?php endif; ?>
+			<!-- <img class="img-thumbnail" src="http://z4a.net/images/2017/11/25/cropped-background.png"/> -->
 			<p></p>

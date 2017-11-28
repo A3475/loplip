@@ -1,4 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php if (!empty($this->options->sidebarBlock) && in_array('ShowSearch', $this->options->sidebarBlock)): ?>
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="widget-title"><?php _e('站内搜索'); ?></h3>
@@ -9,6 +10,8 @@
 		</form>
 	</div>
 </div>
+<?php endif; ?>
+<?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="widget-title"><?php _e('最新文章'); ?></h3>
@@ -19,6 +22,8 @@
     </ul>
     </section>
 </div>
+<?php endif; ?>
+<?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="widget-title"><?php _e('最近回复'); ?></h3>
@@ -30,6 +35,8 @@
         <?php endwhile; ?>
     </ul>
 </div>
+<?php endif; ?>
+<?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="widget-title"><?php _e('分类'); ?></h3>
@@ -38,6 +45,8 @@
 		<?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
 	</div>
 </div>
+<?php endif; ?>
+<?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h3 class="widget-title"><?php _e('归档'); ?></h3>
@@ -48,3 +57,4 @@
         </ul>
 	</section>
 </div>
+<?php endif; ?>
